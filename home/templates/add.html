@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="pt br">
+<head>
+	<meta charset="UTF-8">
+	<title>Earendel Soluções</title>
+	{% load static %}
+	 <link rel="stylesheet" href="{% static 'style1/add.css' %}"/>
+</head>
+<body>
+	<a href="index.html"><h3>Voltar</h3></a>
+	<section id="add-wrapper">
+		<form method="POST" action="add/">
+			<div class="caixas">
+				<label for="cnpj">CNPJ:</label>
+				<input type="text" placeholder="Insira o CNPJ" name="cnpj">
+			</div>
+			<div class="caixas">
+				<label for="contato">Contato de sua empresa:</label>
+				<input type="text" placeholder="Insira o contato" name="contato">
+			</div>
+			<div class="caixas">
+				<label for="resumo">Qual solução você quer?:</label>
+				<textarea name="solucao" placeholder="Insira a solução" cols="100" rows="7"></textarea>
+			</div>
+			<div class="caixas">
+				<input type="submit" class="btn btn-success">
+			</div>
+		</form>
+	</section>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body
+{
+	margin: auto; /*margin automática*/
+	background-color: #f7f7f7;
+}
+
+#topo
+{
+	background-color: white;
+	margin: auto;
+}
+
+.title
+{
+	color: red;
+	text-align: center;
+	font-size: 30px;
+	font-family: "Lucida Handwriting", Cursive;
+	font-style: italic;
+}
+
+.img
+{
+	display: block;
+	margin: auto;
+	padding-bottom: 5px;
+}
+
+.descricoes
+{
+	border: 0.5px solid lightgray;
+	border-radius: 3%;
+	width: 750px;
+	margin-left: 60px;
+	margin-right: 60px;
+    padding-left: 200px;
+    padding-right: 300px;
+    background: white;
+}
+
+.conteudo
+{
+	color: gray;
+	text-align: center;
+}
+
+.conteudo1
+{
+	color: gray;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#titulo
+{
+	color: red;
+}

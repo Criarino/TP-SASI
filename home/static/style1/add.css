@@ -1,0 +1,29 @@
+body
+{
+	margin: auto; /*margin automática*/
+	background-color: #f7f7f7;
+}
+
+.logo
+{
+	margin-top: 5px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#add-wrapper
+{
+	background-color: #EFEFEF;
+	margin-left: 200px;
+	padding: 20px;
+	margin-right: 200px;
+	margin-top:20px;
+}
+
+.caixas
+{
+	background: #f7f7f7;
+	margin: auto;
+	margin-bottom: 10px;
+}

@@ -5,15 +5,25 @@ from django.http import HttpResponseRedirect, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from json import loads
 
-from home.models import Empresa
+from home.models import Empresa, Produto
 
-# Create your views here. instalar ssl em uma aplicação específica ao invés de todas , multiplos domínios para django com e s/ ssl, virtualhost apache e django
+# Create your views here.
 
 def index(request):
 	return render(request,'index.html')
 	
 def adicionar(request):
 	return render(request,'add.html')
+	
+def lista(request):
+	#b = Produto(nome='teste1', descricao='Este produto é um teste', preco=float(110.10))
+	#c = Produto(nome='teste2', descricao='Este produto também é um teste', preco=float(111.10))
+	#d = Produto(nome='teste3', descricao='Adivinha o que este produto é', preco=float(112.10))
+	#b.save()
+	#c.save()
+	#d.save()
+	tudo={"prod": Produto.objects.all()}
+	return render(request,'lista.html', tudo)
 	
 @csrf_exempt
 def add(request):

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="pt br">
+<head>
+	<meta charset="UTF-8">
+	<title>Earendel</title>
+	{% load static %}
+	 <link rel="stylesheet" href="{% static 'style1/list.css' %}"/>
+</head>
+<body>
+	<a href="index.html"><img src="{% static 'res/logo.png' %}" alt="Earendel" title="Earendel" class="logo"/></a>
+	<div id="list-wrapper">
+		{% for i in prod %}
+			<div class="list-l">
+   				<h3> Nome: {{i.nome}}</h3>
+   				<p class="resumo">Descrição: {{i.descricao}}</p>
+   				<h4 class="ultimo">Preço: R${{i.preco}}</h4>
+   			</div>
+		{% endfor %}
+	</div>
+</body>
+</html>

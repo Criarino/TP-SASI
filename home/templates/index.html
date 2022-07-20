@@ -26,6 +26,12 @@
 	</div>
 	<a href="add.html"><h3>Cadastre sua empresa já!</h3></a>
 	<a href="lista.html"><h3>Lista de produtos</h3></a>
+	<a href="/register"><h3>Registre</h3></a>
+	{% if user.is_authenticated %}
+	<a class="nav-link" href="/logout">Logout</a>
+	{% else %}
+	<a class="nav-link" href="/login">Login</a>
+	{% endif %}
 	<h3 id="titulo">Quer ser parceiro da nossa empresa? Fique atento à nossa política de segurança:</h3>
 	<p>Objetivo da Política</p>
 	<p>Esta Política de Segurança da Informação visa orientar as ações, procedimentos e diretrizes para o uso dos ativos de Informação da Earendel Soluções Tecnológicas, ou a elas confiados, a fim de garantir a confidencialidade, integridade, disponibilidade e privacidade (quando aplicável) das Informações, sendo aplicável a todos os colaboradores da Earendel.</p>

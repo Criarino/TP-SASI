@@ -7,7 +7,9 @@
 	 <link rel="stylesheet" href="{% static 'style1/add.css' %}"/>
 </head>
 <body>
-	<a href="http://127.0.0.1:8000/"><h3>Voltar</h3></a>
+	<a href="index.html"><img src="{% static 'res/logo.png' %}" alt="Earendel" title="Earendel" class="logo"/></a>
+	<a href="lista.html"><h3>Voltar aos produtos</h3></a>
+	<h2 class="title">Confirmar Compra</h2>
 	<section id="add-wrapper">
 		<form method="POST" action="add/">
 			<div class="caixas">
@@ -20,7 +22,7 @@
 			</div>
 			<div class="caixas">
 				<label for="resumo">Número do cartão para pagamento:</label>
-				<textarea name="solucao" placeholder="Insira a solução" cols="100" rows="7"></textarea>
+				<input name="solucao" placeholder="Insira o número do cartão"></textarea>
 			</div>
 			<div class="caixas">
 				<input type="submit" class="btn btn-success">

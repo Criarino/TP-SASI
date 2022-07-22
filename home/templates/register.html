@@ -2,20 +2,23 @@
 <html lang="pt br">
 <head>
 	<meta charset="UTF-8">
-	<title>Hello World</title>
+	<title>Earendel Soluções</title>
+	{% load static %}
+	 <link rel="stylesheet" href="{% static 'style1/add.css' %}"/>
 </head>
 <body>
+<a href="index.html"><img src="{% static 'res/logo.png' %}" alt="Earendel" title="Earendel" class="logo"/></a>
 	{% load crispy_forms_tags %}         
 
 <!--Register--> 
-<div class="container py-5">
-	<h1>Register</h1>
+<div id="add-wrapper">
+	<h1>Cadastrar</h1>
 	<form method="POST">
 		{% csrf_token %}
-		{{ register_form|crispy }}S      
-		<button class="btn btn-primary" type="submit">Register</button>
+		{{ register_form|crispy }}     
+		<button class="btn btn-success" type="submit">Cadastrar</button>
 	</form>
-	<p class="text-center">If you already have an account, <a href="/login">login</a> instead.</p>
+	<p class="text-center">Se já tem uma conta, faça o <a href="/login">login</a></p>
 </div>
 </body>
 </html>

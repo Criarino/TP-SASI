@@ -16,6 +16,9 @@ from home.models import Empresa, Produto
 
 def index(request):
 	return render(request,'index.html')
+
+def index1(request):
+	return redirect('http://localhost:8080/')
 	
 def adicionar(request):
 	return render(request,'add.html')
@@ -63,7 +66,7 @@ def login_request(request):
 			user = authenticate(username=username, password=password)
 			if user is not None:
 				login(request ,user)
-				messages.info(request, f"You are now logged in as {username}.")
+				messages.info(request, "You are now logged in as {username}.")
 				return redirect("index.html")
 			else:
 				messages.error(request,"Invalid username or password.")
@@ -75,4 +78,4 @@ def login_request(request):
 def logout_request(request):
 	logout(request)
 	messages.info(request, "You have successfully logged out.") 
-	return redirect('index.html')
+	return redirect('http://localhost:8080/')

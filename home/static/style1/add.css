@@ -27,3 +27,12 @@ body
 	margin: auto;
 	margin-bottom: 10px;
 }
+
+.title
+{
+	color: red;
+	text-align: center;
+	font-size: 30px;
+	font-family: "Lucida Handwriting", Cursive;
+	font-style: italic;
+}
